@@ -10,3 +10,15 @@
 [submodule "sources/playwright-mcp"]
 	path = sources/playwright-mcp
 	url = https://github.com/microsoft/playwright-mcp.git
+[submodule "sources/open-notebook"]
+	path = sources/open-notebook
+	url = https://github.com/lfnovo/open-notebook.git
+[submodule "sources/bb-browser"]
+	path = sources/bb-browser
+	url = https://github.com/epiral/bb-browser.git
+[submodule "sources/llmfit"]
+	path = sources/llmfit
+	url = https://github.com/AlexsJones/llmfit.git
+[submodule "sources/Humanizer-zh"]
+	path = sources/Humanizer-zh
+	url = https://github.com/op7418/Humanizer-zh.git

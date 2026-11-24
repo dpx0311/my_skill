@@ -1,16 +1,50 @@
-# My Skills`r`n# My Skills
+# My Skills
 
 Personal Codex skills and tool sources. Skills in `.agents/skills/` are loaded by Codex when this repository is opened as a trusted project.
+
+## Categories
+
+### Writing
+
+- `humanizer-zh` — polish Chinese prose while preserving the author's meaning and voice.
+
+### Browser and research
+
+- `agent-reach` — read-only access to supported online platforms. Runtime setup is documented in `sources/agent-reach/INSTALL.md`.
+- `bb-browser` — browser automation through the user's browser session. Install/configure the upstream CLI before use; state-changing browser actions require explicit user approval.
+- Playwright MCP is tracked as a source under `sources/playwright-mcp`; configuration instructions are below.
+
+### Product and software engineering
+
+- `gstack` — engineering team workflows (planning, review, QA, release). Tracked as a submodule; Codex support is experimental and needs setup.
+- Open Notebook project agents — project-scoped technical consultant and QA agents in `project-agents/open-notebook/`. Copy them into that project's `.codex/agents/` when working on Open Notebook.
+
+### Design
+
+- `frontend-design` — distinctive visual direction for frontend work.
+- `ui-ux-pro-max` — UI/UX recommendations, searchable design data and stack-specific guidance.
+- Additional UI UX Pro Max skills: `brand`, `design`, `design-system`, `slides`, `banner-design`, `ui-styling`.
+
+### Local models and hardware
+
+- `llmfit-advisor` — recommend local models based on hardware. Requires the `llmfit` CLI for live detection; does not install models or change runtimes.
 
 ## Installed skills
 
 - `frontend-design` — distinctive visual direction for frontend work. Source: `sources/anthropic-skills/skills/frontend-design`.
 - `ui-ux-pro-max` — UI/UX recommendations, searchable design data and stack-specific guidance. Installed with the upstream CLI; update through `uipro update` after refreshing the package.
 - `agent-reach` — read-only platform access skill. Its runtime is not installed yet; see `sources/agent-reach/INSTALL.md`.
+- `bb-browser` — safe-use wrapper plus upstream references. Requires the separate CLI.
+- `humanizer-zh` — Chinese text editing guidance, with upstream instructions retained alongside it.
+- `llmfit-advisor` — local model fit recommendations, with upstream instructions retained alongside it.
 
 ## gstack
 
 `sources/gstack` tracks the upstream engineering workflow repository as a Git submodule. Its Codex support is experimental. The full setup requires Bun 1.4.2+ and builds browser tools; run `./setup --host codex` from that source directory in Git Bash or WSL after installing Bun. Setup may update Codex hooks and global configuration. Review its current setup prompts and docs before opting in. Until setup is run, gstack's skills are not installed as active Codex skills. The checkout is intentionally not duplicated under `.agents/skills/` so updates come from the submodule.
+
+## Application repositories
+
+`sources/open-notebook` is an application, not a general-purpose skill. Its upstream Codex agents are summarized under `project-agents/open-notebook/` and are meant to be copied into that project's `.codex/agents/` folder only. `sources/llmfit` is the source of the `llmfit-advisor` skill; the CLI itself must be installed separately before the skill can detect hardware.
 
 ## Playwright MCP
 
@@ -34,4 +68,4 @@ After updating Anthropic skills, recopy `skills/frontend-design` into `.agents/s
 
 ## GitHub
 
-Create an empty GitHub repository under your account, then add it as `origin` and push this repository. No remote has been configured yet, so it remains local and private on this machine.
+Personal repository: https://github.com/dpx0311/my_skill. Clone with submodules using `git clone --recurse-submodules https://github.com/dpx0311/my_skill.git`.
