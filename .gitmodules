@@ -1,0 +1,12 @@
+[submodule "sources/ui-ux-pro-max-skill"]
+	path = sources/ui-ux-pro-max-skill
+	url = https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
+[submodule "sources/gstack"]
+	path = sources/gstack
+	url = https://github.com/garrytan/gstack.git
+[submodule "sources/anthropic-skills"]
+	path = sources/anthropic-skills
+	url = https://github.com/anthropics/skills.git
+[submodule "sources/playwright-mcp"]
+	path = sources/playwright-mcp
+	url = https://github.com/microsoft/playwright-mcp.git

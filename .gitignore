@@ -1,0 +1,4 @@
+# Vendored upstream source has thousands of files; track it once via Git submodule.
+.agents/skills/gstack/
+# Local upstream checkout kept outside this repository.
+sources/agent-reach/
